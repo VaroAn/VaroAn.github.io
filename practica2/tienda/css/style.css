@@ -36,6 +36,7 @@ a{
 img{
     width: 100%;
 }
+
 .contenedor{
     max-width: 120rem;
     width: 95%;
@@ -70,8 +71,26 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
 
+
+}
+
+.header1 img{
+    max-width: 60%;
+
+}
+
+@media (min-width: 600px){
+    .header1{
+        max-width: 100rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 3rem;
+    
+    }
 }
 
 .header1 a{
@@ -187,6 +206,16 @@ h3{
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 1 / 3;
+    max-width: 95%;
+    
+}
+@media (min-width: 800px){
+    .grafico{
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+    }
 }
 
 .grafico--camisas{
@@ -279,6 +308,14 @@ h3{
 .bloque__titulo{
     margin: 0;
 }
+.bloque__imagen{
+    max-width: 100%;
+}
+@media (min-width: 600px){
+    .bloque__imagen{
+        max-width: 100%;
+    }
+}
 /*Pagina del producto*/
 @media (min-width: 760px){
     .camisa{
@@ -290,22 +327,35 @@ h3{
 
 .formulario{
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 2rem;
 
 }
 .formulario__campo{
-     border: 1rem solid var(--primarioOs);
-     background-color: transparent;
-     font-size: 2rem;
-     font-weight: bold;
-     font-family: Arial, Helvetica, sans-serif;
-     padding: 1rem;
-     appearance: none;
-     border-radius: 1rem;
-
+    border: 1rem solid var(--primarioOs);
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    appearance: none;
+    border-radius: 1rem;
 }
 .formulario__submit{
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuenteP);
+    padding: 2rem;
+    transition:  background-color .3s ease;
+}
+@media (min-width: 800px){
+    .formulario{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    
+    }
+   .formulario__submit{
     background-color: var(--secundario);
     border: none;
     font-size: 2rem;
@@ -315,6 +365,10 @@ h3{
     grid-column: 1 / 3;
     
 }
+    
+}
+
+
 .formulario__submit:hover{
     cursor: pointer;
     background-color: var(--secundarioOs);
@@ -364,8 +418,17 @@ h3{
 .ss{
     display: flex;
     align-items: center;
-    column-gap: 5rem;
+    column-gap: 2rem;
 
+}
+
+@media (min-width: 600px){
+    .ss{
+        display: flex;
+        align-items: center;
+        column-gap: 5rem;
+    
+    }
 }
 
 table.producto1{
