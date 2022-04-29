@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@700&family=Staatliches&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo1.png">
+    <title>FrontEnd Store</title>
+</head>
+
+<body>
+    <header class="header1">
+        <a href="index-.html">
+            <img class="header__logo" src="img/logo.png" alt="logo">
+        </a>
+        <div class="ss">
+            <a href="index.html">Cerrar Sesión</a>
+
+            <div class="header__carrito">
+                <a href="carrito.html">
+                    <img src="img/carrito.png" alt="carrito logo">
+                    Carrito</a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index-.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros-.html">Nosotros</a>
+    </nav>
+    <main class="contenedor">
+        <h1>react js</h1>
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/3.jpg" alt="imagen del producto">
+
+            <div class="camisa__contenido">
+                <p style="font-weight: 900; font-size: 20px;" >$250.00</p>
+                <p style="font-weight: bold;">Enviós</p>
+                <p> Con envío urgente: 6 de mayo <br>
+                    Con envío ordinario: 19 - 23 de mayo</p>
+                <p style="font-weight: bold;">Las devoluciones son gratuitas y fáciles</p>
+                <p>Garantía de devolución o cambio para todas las compras</p>
+                <ul>
+                    <li>La camiseta tradicional de toda la vida</li>
+                    <li>Corte recto, clásico y holgado</li>
+                    <li>El modelo mide 1,83 m (6'0") y lleva la talla M</li>
+                    <li>La modelo mide 1,73 m (5'8") y lleva una S</li>
+                    <li>Tejido grueso de 180 g/m² de gramaje, colores lisos en algodón sanforizado. El color gris
+                        jaspeado es 90 % algodón y 10 % poliéster; el denim jaspeado es 50 % poliéster.</li>
+                    <li>Cuello y dobladillos con doble puntada para una mayor durabilidad</li>
+                </ul>
+                <form class="formulario" action="">
+                    <select class="formulario__campo">
+                        <option disabled selected>--Seleccionar Tamaño--</option>
+                        <option>Chica</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" required>
+                    <input onclick=ac() class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__txt">Antonio Varona Villa - 2015140829</p>
+        <p class="footer__txt">3CM59</p>
+    </footer>
+</body>
+<SCRIPT src="js/login.js"></SCRIPT>
+
+</html>
