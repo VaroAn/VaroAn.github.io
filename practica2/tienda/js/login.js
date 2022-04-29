@@ -4,7 +4,7 @@ function go(){
             
             alert ("Bienvenido");
             window.open("index-.html");
-            window.close("varoan.github.io/practica2/tienda/login.html");     
+            window.close("login.html");     
              
         } 
         else{ 

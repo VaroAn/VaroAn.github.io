@@ -91,6 +91,11 @@ h3{
         font-size: 3rem;
     
     }
+    
+    .header1 img{
+    max-width: 100%;
+
+}
 }
 
 .header1 a{
